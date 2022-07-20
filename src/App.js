@@ -6,57 +6,41 @@ import { useEffect } from "react";
 function App() {
 	const [count, setCount] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const [seconds, setSeconds] = useState(10);
-  // let timer = null;
-  // if(isActive && seconds >0){
-  //   timer = setInterval(() => {
-  //     console.log(seconds);
-  //     setSeconds(seconds - 1);
-  //   }, 1000);
-  // }
-
-  // if(seconds === 0) {
-  //   alert("Your score was " + String(count));
-  //   setSeconds(60);
-  //   setCount(0);
-  //   setIsActive(false);
-  //   clearInterval(timer);
-  // }
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
-    // console.log('entering');
     let timer = null;
-    if(isActive && seconds > 0){
+    if(isActive && seconds >= 0){
       timer = setInterval(() => {
-        setSeconds(seconds - 1);
-        console.log(seconds);
+        setSeconds(seconds => seconds - 1);
       }, 1000);
     }
 
-    if(seconds === 0) {
-      alert("Your score was " + String(count));
+    if(seconds < 0) {
       setSeconds(60);
-      setCount(0);
       setIsActive(false);
     }
 
-    // if(seconds === 0) {
-    //   clearInterval(timer);
-    // }
+
     return () => {
-      // if(seconds === 0) {
         clearInterval(timer);
-      // }
     };
-  });
+  }, [seconds, isActive]);
+
+  useEffect(() => {
+    if (seconds < 0) {
+      alert("Your score was " + String(count));
+      setCount(0);
+    }
+  }, [count, seconds]) 
 
 	const handleClick = event => {
 		setCount(count + 1);
-    const newHorizontalPosition = Math.floor(Math.random() * (1200 - 0 + 1)) + 0;
-    const newVerticalPosition = Math.floor(Math.random() * (700 - 0 + 1)) + 0;
+    const newHorizontalPosition = Math.floor(Math.random() * (1200 - 50 + 1)) + 50;
+    const newVerticalPosition = Math.floor(Math.random() * (700 - 50 + 1)) + 50;
     event.currentTarget.style.marginLeft = String(newHorizontalPosition) + 'px';
     event.currentTarget.style.marginTop = String(newVerticalPosition) + 'px';
-    setIsActive(true);
+    if(!isActive) setIsActive(true);
 	};
 	return (
 		<div
@@ -136,7 +120,7 @@ function App() {
           height:'40px',
           textAlign: 'center',
           borderRadius: '10px',
-          backgroundColor: 'turquoise'
+          backgroundColor: 'white'
         }}>
         <h2> Time Remaining: {seconds} </h2>
       </div>
