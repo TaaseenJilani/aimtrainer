@@ -6,7 +6,7 @@
 
 ## **How to play:**
 
-### Start the timer by clicking any one of the three targets on the screen. The timer will keep going down to zero seconds, so click as many targets as you can! After each successful click on a target, the position of the targets will change to a random position on the screen. You will see your score as you play on the top right hand corner of the screen. After the timer runs out, you will see an alert saying what your score was for the last attempt. After you click 'ok' on the alert, the game will reset and you will be able to restart the timer again by clicking any one of the three targets. 
+### Start the timer by clicking any one of the three targets on the screen. The timer will keep going down to zero seconds, so click as many targets as you can withing one minute! After each successful click on a target, the position of the targets will change to a random position on the screen. You will see your score as you play on the top right hand corner of the screen. After the timer runs out, you will see an alert saying what your score was for the last attempt. After you click 'ok' on the alert, the game will reset and you will be able to restart the timer again by clicking any one of the three targets. 
 
 ## **Here are some sample images of the game:**
 
