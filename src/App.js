@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function App() {
 	const [count, setCount] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
     let timer = null;
