@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# **Aim Trainer**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **How to load the game:**
 
-## Available Scripts
+### After downloading the files and opening them on a text editor, start by changing the directory to the aimtrainer directory by typing 'cd aimtrainer' in the terminal. Then, type 'npm start' onto the terminal and click enter. The game should now open in a new browser tab. 
 
-In the project directory, you can run:
+## **How to play:**
 
-### `npm start`
+### Start the timer by clicking any one of the three targets on the screen. The timer will keep going down to zero seconds, so click as many targets as you can! After each successful click on a target, the position of the targets will change to a random position on the screen. You will see your score as you play on the top right hand corner of the screen. After the timer runs out, you will see an alert saying what your score was for the last attempt. After you click 'ok' on the alert, the game will reset and you will be able to restart the timer again by clicking any one of the three targets. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Here are some sample images of the game:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### This is what the starting state looks like:
 
-### `npm test`
+### After each successful click, your score will update on the top right, while the timer runs down to zero:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### When the timer reaches 0, this is the alert that you get:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### And after you click ok, it's back to the start all over again. 

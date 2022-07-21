@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function App() {
 	const [count, setCount] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const [seconds, setSeconds] = useState(60);
+  const [seconds, setSeconds] = useState(10);
 
   useEffect(() => {
     let timer = null;
@@ -19,6 +19,12 @@ function App() {
     if(seconds < 0) {
       setSeconds(60);
       setIsActive(false);
+      document.getElementById("target1").style.marginLeft = '523px';
+      document.getElementById("target1").style.marginTop = '300px';
+      document.getElementById("target2").style.marginLeft = '430px';
+      document.getElementById("target2").style.marginTop = '300px';
+      document.getElementById("target3").style.marginLeft = '650px';
+      document.getElementById("target3").style.marginTop = '300px';
     }
 
 
@@ -44,7 +50,7 @@ function App() {
 	};
 	return (
 		<div
-			className="background"
+			id="background"
 			style={{
 				width: '100vw',
 				height: "100vh",
@@ -52,7 +58,7 @@ function App() {
 			}}
 		>
 			<div
-				className="count"
+				id="count"
 				style={{
 					marginLeft: "auto",
           marginRight: '20px',
@@ -68,7 +74,7 @@ function App() {
 				Score: {count}
 			</div>
 			<div
-				className ="target1"
+				id ="target1"
         onClick={handleClick}
 				style={{
           display: 'inline-block',
@@ -77,13 +83,13 @@ function App() {
 					height: "50px",
 					backgroundColor: "blue",
           borderRadius: '25px',
-          marginLeft: '500px',
+          marginLeft: '523px',
           marginTop: '300px'
 				}}
 			/>
 
       <div
-				className ="target2"
+				id ="target2"
         onClick={handleClick}
 				style={{
           display: 'inline-block',
@@ -98,7 +104,7 @@ function App() {
 			/>
 
       <div
-				className ="target3"
+				id ="target3"
         onClick={handleClick}
 				style={{
           display: 'inline-block',
@@ -112,7 +118,7 @@ function App() {
 				}}
 			/>
 
-        <div className = "timer"
+        <div id = "timer"
         style = {{
           marginTop: '800px',
           marginLeft: '500px',
