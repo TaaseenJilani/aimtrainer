@@ -16,7 +16,7 @@ This is what the starting state looks like:
 
 
 After each successful click, your score will update on the top right, while the timer runs down to zero:
-<<img width="632" alt="image" src="https://user-images.githubusercontent.com/45811245/180580667-7bcb3516-c148-4ed8-8196-698a0f442648.png">
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/45811245/180580667-7bcb3516-c148-4ed8-8196-698a0f442648.png">
 
 
 When the timer reaches 0, this is the alert that you get:
