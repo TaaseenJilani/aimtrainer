@@ -2,7 +2,7 @@
 
 ## **How to load the game:**
 
-### After downloading the files and opening them on a text editor, start by changing the directory to the aimtrainer directory by typing `cd aimtrainer` in the terminal. Then, type `npm start` onto the terminal and click enter. The game should now open in a new browser tab. 
+After downloading the files and opening them on a text editor, start by changing the directory to the aimtrainer directory by typing `cd aimtrainer` in the terminal. Then, type `npm start` onto the terminal and click enter. The game should now open in a new browser tab. 
 
 ## **How to play:**
 
